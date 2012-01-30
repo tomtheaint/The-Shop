@@ -1,0 +1,57 @@
+<%= form_for(@prop) do |f| %>
+  <% if @prop.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@prop.errors.count, "error") %> prohibited this prop from being saved:</h2>
+
+      <ul>
+      <% @prop.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :keywords %><br />
+    <%= f.text_field :keywords %>
+  </div>
+  <div class="field">
+    <%= f.label :desc %><br />
+    <%= f.text_area :desc %>
+  </div>
+  <div class="field">
+    <%= f.label :picture %><br />
+    <%= f.text_field :picture %>
+  </div>
+  <div class="field">
+    <%= f.label :pID %><br />
+    <%= f.text_field :pID %>
+  </div>
+  <div class="field">
+    <%= f.label :count %><br />
+    <%= f.number_field :count %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br />
+    <%= f.number_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :rent %><br />
+    <%= f.number_field :rent %>
+  </div>
+  <div class="field">
+    <%= f.label :lastOut %><br />
+    <%= f.date_select :lastOut %>
+  </div>
+  <div class="field">
+    <%= f.label :timesOut %><br />
+    <%= f.number_field :timesOut %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

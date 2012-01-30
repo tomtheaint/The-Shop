@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  keywords: MyString
+  desc: MyText
+  picture: MyString
+  pID: MyString
+  count: 1
+  price: 1
+  rent: 1
+  lastOut: 2012-01-30
+  timesOut: 1
+
+two:
+  name: MyString
+  keywords: MyString
+  desc: MyText
+  picture: MyString
+  pID: MyString
+  count: 1
+  price: 1
+  rent: 1
+  lastOut: 2012-01-30
+  timesOut: 1

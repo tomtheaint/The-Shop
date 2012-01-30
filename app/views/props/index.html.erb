@@ -1,0 +1,41 @@
+<h1>Listing props</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Keywords</th>
+    <th>Desc</th>
+    <th>Picture</th>
+    <th>Pid</th>
+    <th>Count</th>
+    <th>Price</th>
+    <th>Rent</th>
+    <th>Lastout</th>
+    <th>Timesout</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @props.each do |prop| %>
+  <tr>
+    <td><%= prop.name %></td>
+    <td><%= prop.keywords %></td>
+    <td><%= prop.desc %></td>
+    <td><%= prop.picture %></td>
+    <td><%= prop.pID %></td>
+    <td><%= prop.count %></td>
+    <td><%= prop.price %></td>
+    <td><%= prop.rent %></td>
+    <td><%= prop.lastOut %></td>
+    <td><%= prop.timesOut %></td>
+    <td><%= link_to 'Show', prop %></td>
+    <td><%= link_to 'Edit', edit_prop_path(prop) %></td>
+    <td><%= link_to 'Destroy', prop, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Prop', new_prop_path %>

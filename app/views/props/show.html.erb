@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @prop.name %>
+</p>
+
+<p>
+  <b>Keywords:</b>
+  <%= @prop.keywords %>
+</p>
+
+<p>
+  <b>Desc:</b>
+  <%= @prop.desc %>
+</p>
+
+<p>
+  <b>Picture:</b>
+  <%= @prop.picture %>
+</p>
+
+<p>
+  <b>Pid:</b>
+  <%= @prop.pID %>
+</p>
+
+<p>
+  <b>Count:</b>
+  <%= @prop.count %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @prop.price %>
+</p>
+
+<p>
+  <b>Rent:</b>
+  <%= @prop.rent %>
+</p>
+
+<p>
+  <b>Lastout:</b>
+  <%= @prop.lastOut %>
+</p>
+
+<p>
+  <b>Timesout:</b>
+  <%= @prop.timesOut %>
+</p>
+
+
+<%= link_to 'Edit', edit_prop_path(@prop) %> |
+<%= link_to 'Back', props_path %>

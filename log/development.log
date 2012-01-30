@@ -1,0 +1,36 @@
+
+
+Started GET "/" for 192.168.1.200 at Mon Jan 30 15:45:38 -0600 2012
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.erb within layouts/application (3.8ms)
+Compiled application.css  (3ms)  (pid 1992)
+Compiled pages.css  (6ms)  (pid 1992)
+Compiled application.js  (9ms)  (pid 1992)
+Compiled jquery.js  (13ms)  (pid 1992)
+Compiled jquery_ujs.js  (2ms)  (pid 1992)
+Compiled pages.js  (270ms)  (pid 1992)
+Completed 200 OK in 557ms (Views: 556.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.200 at Mon Jan 30 15:45:40 -0600 2012
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.200 at Mon Jan 30 15:45:40 -0600 2012
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.200 at Mon Jan 30 15:45:40 -0600 2012
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/pages.css?body=1" for 192.168.1.200 at Mon Jan 30 15:45:40 -0600 2012
+Served asset /pages.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/pages.js?body=1" for 192.168.1.200 at Mon Jan 30 15:45:40 -0600 2012
+Served asset /pages.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.200 at Mon Jan 30 15:45:40 -0600 2012
+Served asset /application.js - 200 OK (0ms)
